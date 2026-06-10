@@ -6,7 +6,7 @@ if (isset($_POST['login'])) {
 
     if ($name == "rafael" && $pass == "12345") {
 
-        header("Location: home.html");
+        header("Location: home.php");
         exit();
 
     } else {
