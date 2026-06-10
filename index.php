@@ -54,6 +54,17 @@
     }
   </style>
 </head>
+  <?php
+$name="rafael";
+$pass="12345";
+
+if($name == "rafael"){
+  echo "";
+}
+else($name!="rafael"){
+  echo <script>"username salah"</script>
+}
+?>
 <body>
 
   <div class="card">
