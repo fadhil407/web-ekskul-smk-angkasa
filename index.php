@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -54,7 +55,21 @@
     }
   </style>
 </head>
-  <?php
+ 
+<body>
+
+  <div class="card">
+    <h2>Login SMK Angkasa</h2>
+
+    <!-- INI KUNCINYA -->
+    <form action="home.html" method="post">
+      <input type="text" placeholder="Username" id="name" required>
+      <input type="password" placeholder="Password" id="pass" required>
+      <button type="submit">Login</button>
+    </form>
+
+  </div>
+ <?php
 if(isset($_POST['login'])){
   
 $name= $_POST ['name'];
@@ -71,19 +86,6 @@ echo "<script>alert('pass atau username salah');</script>";
 }
 }
 ?>
-<body>
-
-  <div class="card">
-    <h2>Login SMK Angkasa</h2>
-
-    <!-- INI KUNCINYA -->
-    <form action="home.html" method="post">
-      <input type="text" placeholder="Username" id="name" required>
-      <input type="password" placeholder="Password" id="pass" required>
-      <button type="submit">Login</button>
-    </form>
-
-  </div>
-
 </body>
 </html>
+?>
