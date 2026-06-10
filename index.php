@@ -62,7 +62,7 @@
     <h2>Login SMK Angkasa</h2>
 
     <!-- INI KUNCINYA -->
-    <form action="home.html" method="post">
+    <form action="" method="post">
       <input type="text" placeholder="Username" id="name" required>
       <input type="password" placeholder="Password" id="pass" required>
       <button type="submit">Login</button>
