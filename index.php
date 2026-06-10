@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -56,7 +54,23 @@
     }
   </style>
 </head>
+  <?php
+if(isset($_POST['login'])){
   
+$name= $_POST ['name'];
+$pass= $_POST ['pass'];
+
+
+
+
+if($name == "rafael"  && $pass == "12345"){
+  header("location:home.html");
+  exit();
+} else {
+echo "<script>alert('pass atau username salah');</script>";
+}
+}
+?>
 <body>
 
   <div class="card">
