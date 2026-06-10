@@ -1,19 +1,4 @@
-<?php
-$name= $_POST ['name'];
-$pass= $_POST ['pass'];
 
-$name_tetap="rafael";
-$pass_tetap="12345";
-
-
-if($name == $name_tetap && $pass == $pass_tetap)
-  header(location:"home.html");
-  exit();
-    else 
-echo <script>pass atau username salah</script>;
-
-  
-?>
 
 <!DOCTYPE html>
 <html lang="id">
@@ -88,3 +73,19 @@ echo <script>pass atau username salah</script>;
 
 </body>
 </html>
+<?php
+$name= $_POST ['name'];
+$pass= $_POST ['pass'];
+
+$name_tetap="rafael";
+$pass_tetap="12345";
+
+
+if($name == $name_tetap && $pass == $pass_tetap)
+  header(location:"home.html");
+  exit();
+    else 
+echo <script>pass atau username salah</script>;
+
+  
+?>
