@@ -55,15 +55,19 @@
   </style>
 </head>
   <?php
-$name="rafael";
-$pass="12345";
+$name= $_POST ['name'];
+$pass= $_POST ['pass'];
 
-if($name == "rafael"){
-  echo "";
-}
-else($name!="rafael"){
-  echo <script>"username salah"</script>
-}
+$name_tetap="rafael";
+$pass_tetap="12345";
+
+
+if($name == $name_tetap && $pass == $pass_tetap)
+  header(location:"home.html");
+  exit();
+    else 
+echo <script>pass atau username salah</script>;
+  
 ?>
 <body>
 
@@ -71,9 +75,9 @@ else($name!="rafael"){
     <h2>Login SMK Angkasa</h2>
 
     <!-- INI KUNCINYA -->
-    <form action="home.html" method="get">
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+    <form action="home.html" method="post">
+      <input type="text" placeholder="Username" id="name" required>
+      <input type="password" placeholder="Password" id="pass" required>
       <button type="submit">Login</button>
     </form>
 
