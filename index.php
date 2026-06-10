@@ -62,10 +62,10 @@
     <h2>Login SMK Angkasa</h2>
 
     <!-- INI KUNCINYA -->
-    <form action="" method="post">
-      <input type="text" placeholder="Username" id="name" required>
-      <input type="password" placeholder="Password" id="pass" required>
-      <button type="submit">Login</button>
+    <form action="home.html" method="post">
+      <input type="text" placeholder="Username" id="name" name="name"required>
+      <input type="password" placeholder="Password" id="pass" name="pass" required>
+      <button type="submit"name="login">Login</button>
     </form>
 
   </div>
@@ -79,13 +79,12 @@ $pass= $_POST ['pass'];
 
 
 if($name == "rafael"  && $pass == "12345"){
-  header("location:home.html");
+  header(" location :home.html");
   exit();
 } else {
-echo "<script>alert('pass atau username salah');</script>";
+echo "<script>alert('pass atau username salah')</script>";
 }
 }
 ?>
 </body>
 </html>
-?>
